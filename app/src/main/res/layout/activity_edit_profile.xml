@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#1A1A2E"
+    android:padding="20dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:gravity="center_vertical">
+
+        <ImageButton
+            android:id="@+id/backBtn"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/back"
+            android:background="#1A1A2E"
+            android:scaleType="centerInside"
+            android:tint="#8A2BE2"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Редактировать профиль"
+            android:textSize="20sp"
+            android:textColor="#FFFFFF"/>
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/fn"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:hint="Имя"
+        android:textColor="#1A1A2E"
+        android:background="#FFFFFF"
+        android:padding="12dp"
+        android:layout_marginTop="20dp"/>
+
+    <EditText
+        android:id="@+id/ln"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:hint="Фамилия"
+        android:textColor="#1A1A2E"
+        android:background="#FFFFFF"
+        android:padding="12dp"
+        android:layout_marginTop="10dp"/>
+
+    <EditText
+        android:id="@+id/uname"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:hint="Username"
+        android:textColor="#1A1A2E"
+        android:background="#FFFFFF"
+        android:padding="12dp"
+        android:layout_marginTop="10dp"/>
+
+    <EditText
+        android:id="@+id/bio"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:hint="О себе"
+        android:textColor="#1A1A2E"
+        android:background="#FFFFFF"
+        android:padding="12dp"
+        android:layout_marginTop="10dp"
+        android:gravity="top"/>
+
+    <Button
+        android:id="@+id/saveBtn"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="Сохранить"
+        android:textColor="#FFFFFF"
+        android:backgroundTint="#8A2BE2"
+        android:layout_marginTop="20dp"/>
+
+</LinearLayout>

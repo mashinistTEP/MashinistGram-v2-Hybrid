@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#1A1A2E">
+
+    <LinearLayout android:layout_width="match_parent" android:layout_height="50dp" android:background="#8A2BE2" android:gravity="center_vertical" android:padding="10dp">
+        <ImageButton android:id="@+id/backBtn" android:layout_width="40dp" android:layout_height="40dp" android:src="@drawable/back" android:background="#8A2BE2" android:scaleType="centerInside"/>
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="О приложении" android:textSize="22sp" android:textColor="#FFFFFF"/>
+    </LinearLayout>
+
+    <ScrollView android:layout_width="match_parent" android:layout_height="match_parent" android:padding="20dp">
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical">
+
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="MashinistGram" android:textSize="24sp" android:textColor="#8A2BE2" android:textStyle="bold" android:layout_marginBottom="16dp"/>
+            <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Проект: MashinistGram Messenger" android:textColor="#FFFFFF" android:textSize="14sp" android:layout_marginBottom="4dp"/>
+            <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Разработчик: Кирилл Филимонов" android:textColor="#FFFFFF" android:textSize="14sp" android:layout_marginBottom="4dp"/>
+            <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Тестировщик: Кирилл Филимонов" android:textColor="#FFFFFF" android:textSize="14sp" android:layout_marginBottom="4dp"/>
+            <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Дизайн: Кирилл Филимонов" android:textColor="#FFFFFF" android:textSize="14sp" android:layout_marginBottom="12dp"/>
+
+            <View android:layout_width="match_parent" android:layout_height="1dp" android:background="#333" android:layout_marginVertical="12dp"/>
+
+            <TextView android:id="@+id/licenseTitleRu" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Лицензия (нажмите для полной версии)" android:textSize="16sp" android:textColor="#8A2BE2" android:textStyle="bold" android:layout_marginBottom="8dp" android:clickable="true" android:focusable="true"/>
+            <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="MIT License. Данное ПО предоставляется как есть. Команда не несёт никакой ответственности за убытки или вред при использовании этого ПО!"
+android:textColor="#AAAAAA" android:textSize="12sp"/>
+
+            <View android:layout_width="match_parent" android:layout_height="1dp" android:background="#333" android:layout_marginVertical="12dp"/>
+
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="README" android:textSize="18sp" android:textColor="#8A2BE2" android:textStyle="bold" android:layout_marginBottom="8dp"/>
+            <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="MashinistGram — мессенджер со звёздами, премиумом и верификацией." android:textColor="#AAAAAA" android:textSize="12sp"/>
+
+            <View android:layout_width="match_parent" android:layout_height="1dp" android:background="#333" android:layout_marginVertical="12dp"/>
+
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Версия" android:textSize="18sp" android:textColor="#8A2BE2" android:textStyle="bold" android:layout_marginBottom="8dp"/>
+            <TextView android:id="@+id/versionTv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="0.1.0-alpha" android:textColor="#FFFFFF" android:textSize="16sp"/>
+
+            <View android:layout_width="match_parent" android:layout_height="2dp" android:background="#8A2BE2" android:layout_marginVertical="24dp"/>
+
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="MashinistGram" android:textSize="24sp" android:textColor="#8A2BE2" android:textStyle="bold" android:layout_marginBottom="16dp"/>
+            <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Project: MashinistGram Messenger" android:textColor="#FFFFFF" android:textSize="14sp" android:layout_marginBottom="4dp"/>
+            <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Developer: Kirill Filimonov" android:textColor="#FFFFFF" android:textSize="14sp" android:layout_marginBottom="4dp"/>
+            <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Tester: Kirill Filimonov" android:textColor="#FFFFFF" android:textSize="14sp" android:layout_marginBottom="4dp"/>
+            <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Design: Kirill Filimonov" android:textColor="#FFFFFF" android:textSize="14sp" android:layout_marginBottom="12dp"/>
+
+            <View android:layout_width="match_parent" android:layout_height="1dp" android:background="#333" android:layout_marginVertical="12dp"/>
+
+            <TextView android:id="@+id/licenseTitleEn" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="License (tap for full version)" android:textSize="16sp" android:textColor="#8A2BE2" android:textStyle="bold" android:layout_marginBottom="8dp" android:clickable="true" android:focusable="true"/>
+            <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="MIT License. Software provided as is. The authors are not responsible for any damage or harm caused by using this software!" android:textColor="#AAAAAA" android:textSize="12sp"/>
+
+            <View android:layout_width="match_parent" android:layout_height="1dp" android:background="#333" android:layout_marginVertical="12dp"/>
+
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="README" android:textSize="18sp" android:textColor="#8A2BE2" android:textStyle="bold" android:layout_marginBottom="8dp"/>
+            <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="MashinistGram messenger with stars, premium, verification." android:textColor="#AAAAAA" android:textSize="12sp"/>
+
+            <View android:layout_width="match_parent" android:layout_height="1dp" android:background="#333" android:layout_marginVertical="12dp"/>
+
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Version" android:textSize="18sp" android:textColor="#8A2BE2" android:textStyle="bold" android:layout_marginBottom="8dp"/>
+            <TextView android:id="@+id/versionTvEn" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="0.1.0-alpha" android:textColor="#FFFFFF" android:textSize="16sp"/>
+
+            <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Copyright (c) 2026\nAll rights reserved." android:textColor="#666666" android:textSize="12sp" android:layout_marginTop="16dp" android:gravity="center"/>
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

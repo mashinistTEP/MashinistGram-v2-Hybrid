@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple">#8A2BE2</color>
+    <color name="bg">#1A1A2E</color>
+    <color name="card">#2A2A3E</color>
+    <color name="text">#FFFFFF</color>
+    <color name="textGray">#AAAAAA</color>
+    <color name="msgMine">#8A2BE2</color>
+    <color name="msgTheirs">#2A2A3E</color>
+</resources>

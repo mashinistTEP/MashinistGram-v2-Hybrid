@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">MashinistGram</string>
+    <string name="create_group">Создать группу</string>
+    <string name="create_channel">Создать канал</string>
+    <string name="group_title_hint">Название группы</string>
+    <string name="select_members">Выберите участников:</string>
+    <string name="create_group_btn">Создать группу</string>
+    <string name="members_empty">Выберите участников</string>
+    <string name="title_empty">Введите название</string>
+</resources>

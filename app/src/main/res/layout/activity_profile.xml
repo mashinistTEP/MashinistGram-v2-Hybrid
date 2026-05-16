@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#1A1A2E"
+    android:padding="20dp">
+
+    <LinearLayout android:layout_width="match_parent" android:layout_height="50dp" android:orientation="horizontal" android:gravity="center_vertical">
+        <ImageButton android:id="@+id/backBtn" android:layout_width="40dp" android:layout_height="40dp" android:src="@drawable/back" android:background="#1A1A2E" android:scaleType="centerInside"/>
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Профиль" android:textSize="22sp" android:textColor="#B659FF"/>
+    </LinearLayout>
+
+    <ScrollView android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1">
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical" android:gravity="center_horizontal" android:padding="10dp">
+            <ImageView android:id="@+id/avatar" android:layout_width="100dp" android:layout_height="100dp" android:src="@drawable/user" android:layout_marginTop="20dp"/>
+            <TextView android:id="@+id/nameTv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textSize="24sp" android:textColor="#8A2BE2" android:layout_marginTop="15dp" android:gravity="center"/>
+            <LinearLayout android:id="@+id/badgesLayout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:orientation="horizontal" android:gravity="center" android:layout_marginTop="6dp"/>
+            <TextView android:id="@+id/usernameTv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textSize="16sp" android:textColor="#B659FF" android:layout_marginTop="4dp"/>
+            <TextView android:id="@+id/bioTv" android:layout_width="match_parent" android:layout_height="wrap_content" android:textSize="14sp" android:textColor="#555555" android:layout_marginTop="10dp" android:gravity="center" android:paddingStart="20dp" android:paddingEnd="20dp"/>
+            <View android:layout_width="match_parent" android:layout_height="1dp" android:background="#1A1A2E" android:layout_marginTop="20dp" android:layout_marginBottom="20dp"/>
+            <TextView android:id="@+id/emailTv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textSize="15sp" android:textColor="#8A2BE2" android:layout_marginTop="5dp"/>
+            <TextView android:id="@+id/starsTv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textSize="18sp" android:textColor="#FFD700" android:layout_marginTop="10dp"/>
+            <TextView android:id="@+id/idTv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textSize="13sp" android:textColor="#666666" android:layout_marginTop="15dp"/>
+        </LinearLayout>
+    </ScrollView>
+
+    <Button android:id="@+id/editBtn" android:layout_width="match_parent" android:layout_height="50dp" android:text="Редактировать" android:textColor="#8A2BE2" android:backgroundTint="#FFFFFF" android:layout_marginTop="10dp"/>
+    <Button android:id="@+id/logoutBtn" android:layout_width="match_parent" android:layout_height="50dp" android:text="Выйти из аккаунта" android:textColor="#8A2BE2" android:backgroundTint="#B659FF" android:layout_marginTop="10dp"/>
+
+</LinearLayout>

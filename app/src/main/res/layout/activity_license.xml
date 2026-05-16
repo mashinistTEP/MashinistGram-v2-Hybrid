@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#1A1A2E">
+
+    <LinearLayout android:layout_width="match_parent" android:layout_height="50dp" android:background="#8A2BE2" android:gravity="center_vertical" android:padding="10dp">
+        <ImageButton android:id="@+id/backBtn" android:layout_width="40dp" android:layout_height="40dp" android:src="@drawable/back" android:background="#8A2BE2" android:scaleType="centerInside"/>
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Ліцэнзія / License" android:textSize="22sp" android:textColor="#FFFFFF"/>
+    </LinearLayout>
+
+    <ScrollView android:layout_width="match_parent" android:layout_height="match_parent" android:padding="20dp">
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical">
+
+            <!-- English (main license) -->
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="MIT License (English)" android:textSize="18sp" android:textColor="#8A2BE2" android:textStyle="bold" android:layout_marginBottom="10dp"/>
+            <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Copyright (c) 2026 Kirill\n\nPermission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the Software), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:\n\nThe above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED AS IS, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE." android:textColor="#AAAAAA" android:textSize="12sp" android:lineSpacingMultiplier="1.4"/>
+
+            <View android:layout_width="match_parent" android:layout_height="1dp" android:background="#333" android:layout_marginVertical="16dp"/>
+
+            <!-- Беларусь -->
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="🇧🇾 Беларусь" android:textSize="16sp" android:textColor="#FFFFFF" android:textStyle="bold" android:layout_marginBottom="4dp"/>
+            <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Заканадаўства: Закон Рэспублікі Беларусь Аб аўтарскім праве і сумежных правах № 262-З ад 17.05.2011.\n\nПраграма для ЭВМ ахоўваецца як літаратурны твор. Аўтар валодае выключнымі правамі на выкарыстанне праграмы. Парушэнне аўтарскіх правоў цягне адказнасць згодна з Крымінальным кодэксам Рэспублікі Беларусь (арт. 201) і Грамадзянскім кодэксам." android:textColor="#AAAAAA" android:textSize="12sp" android:layout_marginBottom="16dp"/>
+
+            <!-- РФ -->
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="🇷🇺 Россия" android:textSize="16sp" android:textColor="#FFFFFF" android:textStyle="bold" android:layout_marginBottom="4dp"/>
+            <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Законодательство: Гражданский кодекс РФ (часть 4), статьи 1255-1302.\n\nПрограмма для ЭВМ охраняется как литературное произведение. Автор обладает исключительным правом на программу. Нарушение авторских прав влечёт ответственность по ст. 146 УК РФ и ст. 7.12 КоАП РФ." android:textColor="#AAAAAA" android:textSize="12sp" android:layout_marginBottom="16dp"/>
+
+            <!-- Украина -->
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="🇺🇦 Україна" android:textSize="16sp" android:textColor="#FFFFFF" android:textStyle="bold" android:layout_marginBottom="4dp"/>
+            <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Законодавство: Закон України Про авторське право і суміжні права № 3792-XII від 23.12.1993.\n\nКомпютерна програма охороняється як літературний твір. Автор має виключне право на використання програми. Порушення авторських прав тягне відповідальність згідно з Кримінальним кодексом України (ст. 176)." android:textColor="#AAAAAA" android:textSize="12sp" android:layout_marginBottom="16dp"/>
+
+            <!-- ЕС -->
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="🇪🇺 Европейский Союз" android:textSize="16sp" android:textColor="#FFFFFF" android:textStyle="bold" android:layout_marginBottom="4dp"/>
+            <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Legislation: Directive 2009/24/EC on the legal protection of computer programs.\n\nA computer program is protected as a literary work. The author has exclusive rights to the program. Infringement is subject to penalties under national laws of EU member states." android:textColor="#AAAAAA" android:textSize="12sp" android:layout_marginBottom="16dp"/>
+
+            <!-- США -->
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="🇺🇸 США" android:textSize="16sp" android:textColor="#FFFFFF" android:textStyle="bold" android:layout_marginBottom="4dp"/>
+            <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Legislation: U.S. Copyright Act (17 U.S.C. §§ 101-1511).\n\nComputer software is protected as a literary work. The copyright holder has exclusive rights. Infringement may result in statutory damages up to $150,000 per work under 17 U.S.C. § 504(c)." android:textColor="#AAAAAA" android:textSize="12sp" android:layout_marginBottom="16dp"/>
+
+            <View android:layout_width="match_parent" android:layout_height="1dp" android:background="#333" android:layout_marginVertical="12dp"/>
+
+            <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Copyright © 2026\nAll rights reserved." android:textColor="#666666" android:textSize="12sp" android:gravity="center"/>
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

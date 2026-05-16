@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#1A1A2E">
+
+    <LinearLayout android:layout_width="match_parent" android:layout_height="50dp" android:background="#8A2BE2" android:gravity="center_vertical" android:padding="10dp">
+        <ImageButton android:id="@+id/backBtn" android:layout_width="40dp" android:layout_height="40dp" android:src="@drawable/back" android:background="#8A2BE2" android:scaleType="centerInside"/>
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Магазин" android:textSize="22sp" android:textColor="#FFFFFF"/>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/starsTv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="⭐ Ваш баланс: 0 звёзд"
+        android:textColor="#FFD700"
+        android:textSize="18sp"
+        android:padding="16dp"
+        android:gravity="center"/>
+
+    <ListView
+        android:id="@+id/shopList"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:divider="#333"
+        android:dividerHeight="1dp"/>
+
+</LinearLayout>
