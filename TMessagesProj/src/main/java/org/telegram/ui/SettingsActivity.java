@@ -830,13 +830,13 @@ public class SettingsActivity extends BaseFragment implements NotificationCenter
             case 13:
                 presentFragment(new TONIntroActivity());
             case 1001:
-                presentFragment(new app.mashinistgram.messenger.hybrid.StarsActivity());
+                presentFragment(new app.mashinistgram.messenger.hybrid.StarsFragment());
                 break;
             case 1002:
-                presentFragment(new app.mashinistgram.messenger.hybrid.PremiumActivity());
+                presentFragment(new app.mashinistgram.messenger.hybrid.PremiumFragment());
                 break;
             case 1003:
-                presentFragment(new app.mashinistgram.messenger.hybrid.ShopActivity());
+                presentFragment(new app.mashinistgram.messenger.hybrid.ShopFragment());
                 break;
             case 1004:
                 presentFragment(new app.mashinistgram.messenger.hybrid.VerifyFragment());
