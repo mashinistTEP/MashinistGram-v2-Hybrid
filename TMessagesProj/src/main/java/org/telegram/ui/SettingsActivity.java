@@ -694,6 +694,14 @@ public class SettingsActivity extends BaseFragment implements NotificationCenter
         if (!getMessagesController().premiumFeaturesBlocked()) {
             items.add(SettingCell.Factory.of(11, 0xFFB659FF, 0xFF617CFF, R.drawable.settings_premium, getString(R.string.TelegramPremium)));
         }
+        items.add(SettingCell.Factory.of(1001, 0xFFFFD700, 0xFFFFD700, R.drawable.settings_stars, "⭐ Мои звёзды"));
+        items.add(SettingCell.Factory.of(1002, 0xFFB659FF, 0xFF617CFF, R.drawable.settings_premium, "👑 Мой премиум"));
+        items.add(SettingCell.Factory.of(1003, 0xFF8A2BE2, 0xFF6A1B9A, R.drawable.settings_premium, "🛒 Магазин"));
+        items.add(SettingCell.Factory.of(1004, 0xFF00CC00, 0xFF008800, R.drawable.settings_premium, "✅ Верификация"));
+        items.add(SettingCell.Factory.of(1005, 0xFFFF8800, 0xFFCC6600, R.drawable.settings_premium, "💎 Спонсор"));
+        items.add(SettingCell.Factory.of(1006, 0xFF888888, 0xFF666666, R.drawable.settings_premium, "🗑️ Очистить кэш"));
+        items.add(SettingCell.Factory.of(1007, 0xFF888888, 0xFF666666, R.drawable.settings_premium, "🔄 Сменить аккаунт"));
+        items.add(SettingCell.Factory.of(1008, 0xFF888888, 0xFF666666, R.drawable.settings_premium, "ℹ️ О приложении"));
         if (getMessagesController().starsPurchaseAvailable()) {
             StarsController c = StarsController.getInstance(currentAccount);
             long balance = c.getBalance().amount;
@@ -821,6 +829,30 @@ public class SettingsActivity extends BaseFragment implements NotificationCenter
                 break;
             case 13:
                 presentFragment(new TONIntroActivity());
+            case 1001:
+                presentFragment(new app.mashinistgram.messenger.hybrid.StarsActivity());
+                break;
+            case 1002:
+                presentFragment(new app.mashinistgram.messenger.hybrid.PremiumActivity());
+                break;
+            case 1003:
+                presentFragment(new app.mashinistgram.messenger.hybrid.ShopActivity());
+                break;
+            case 1004:
+                presentFragment(new app.mashinistgram.messenger.hybrid.VerifyFragment());
+                break;
+            case 1005:
+                presentFragment(new app.mashinistgram.messenger.hybrid.SponsorFragment());
+                break;
+            case 1006:
+                presentFragment(new app.mashinistgram.messenger.hybrid.CacheFragment());
+                break;
+            case 1007:
+                presentFragment(new app.mashinistgram.messenger.hybrid.SwitchAccountFragment());
+                break;
+            case 1008:
+                presentFragment(new app.mashinistgram.messenger.hybrid.AboutFragment());
+                break;
                 break;
             case 15:
                 presentFragment(new PremiumPreviewFragment(PremiumPreviewFragment.FEATURES_BUSINESS, "settings"));
