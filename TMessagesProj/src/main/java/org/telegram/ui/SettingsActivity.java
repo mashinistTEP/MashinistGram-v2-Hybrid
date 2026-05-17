@@ -853,7 +853,7 @@ public class SettingsActivity extends BaseFragment implements NotificationCenter
             case 1008:
                 presentFragment(new app.mashinistgram.messenger.hybrid.AboutFragment());
                 break;
-                break;
+                // break removed
             case 15:
                 presentFragment(new PremiumPreviewFragment(PremiumPreviewFragment.FEATURES_BUSINESS, "settings"));
                 break;

@@ -8,7 +8,6 @@ import android.widget.TextView;
 import org.telegram.ui.ActionBar.BaseFragment;
 
 public class AboutFragment extends BaseFragment {
-    @Override
     public View createView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         TextView textView = new TextView(getContext());
         textView.setText("About - скоро будет!");

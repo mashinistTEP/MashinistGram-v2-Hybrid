@@ -8,7 +8,6 @@ import android.widget.TextView;
 import org.telegram.ui.ActionBar.BaseFragment;
 
 public class SwitchAccountFragment extends BaseFragment {
-    @Override
     public View createView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         TextView textView = new TextView(getContext());
         textView.setText("SwitchAccount - скоро будет!");
